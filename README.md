@@ -1,4 +1,4 @@
-# L'Oréal Claims Assessment Frontend
+# Claims Assessment Frontend
 
 Deployed URL:
 https://frontend-2lgkx9lnr-guduruaishwaryas-projects.vercel.app
