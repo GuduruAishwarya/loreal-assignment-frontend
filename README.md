@@ -1,4 +1,4 @@
-# L'Oréal Claims Assessment Frontend
+# Claims Assessment Frontend
 
 Deployed URL:
 https://frontend-2lgkx9lnr-guduruaishwaryas-projects.vercel.app
@@ -15,7 +15,7 @@ This frontend submits beauty claim data to the backend assessment API and displa
    ```
 2. Update the API URL for local development:
    ```env
-   VITE_BACKEND_API_URL=http://localhost:3001
+   BACKEND_API_URL=http://localhost:3001
    ```
 3. Start the app:
    ```bash
