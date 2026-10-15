@@ -1,16 +1,46 @@
-# React + Vite
+# L'Oréal Claims Assessment Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Deployed URL:
+https://frontend-2lgkx9lnr-guduruaishwaryas-projects.vercel.app
 
-Currently, two official plugins are available:
+## Project overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This frontend submits beauty claim data to the backend assessment API and displays the AI-generated decision, confidence, and reasoning.
 
-## React Compiler
+## Local setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+2. Update the API URL for local development:
+   ```env
+   VITE_BACKEND_API_URL=http://localhost:3001
+   ```
+3. Start the app:
+   ```bash
+   npm install
+   npm run dev
+   ```
 
-## Expanding the Oxlint configuration
+## Production environment configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The real production environment variables are configured in the Vercel dashboard, not in the repository.
+
+Go to:
+
+- Vercel Dashboard
+- Project -> Settings
+- Environment Variables
+
+Set:
+
+```env
+VITE_BACKEND_API_URL=https://your-backend-url
+```
+
+Important: in Vite, frontend variables must be prefixed with `VITE_` to be exposed in the browser.
+
+## Deployment notes
+
+This project is deployed on Vercel and uses the live URL above for the frontend.
